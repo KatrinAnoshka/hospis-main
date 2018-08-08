@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="css/fonts.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	</head>
 	<body>
 
@@ -45,7 +44,20 @@
 							<span></span>
 						</a>
 						<ul class="menu menu__links">
-							<li class="menu__links-item"><a href="#home">О нас</a></li>
+							<li class="menu__links-item"><a href="#home">О нас</a>
+								<ul class="submenu">
+						            <li><a href=#>История</a></li>
+						            <li><a href=#>Что такое паллиатив?</a></li>
+						            <li><a href=#>Наша команда</a></li>
+						            <li><a href=#>Наши попечители</a></li>
+						            <li><a href=#>Программы</a></li>
+						            <li><a href=#>Проекты</a></li>
+						            <li><a href=#>Отчеты</a></li>
+						            <li><a href=#>Лесная поляна</a></li>
+						            <li><a href=#>Нам помогают</a></li>
+						            <li><a href=#>Волонтеры</a></li>
+						        </ul>
+							</li>
 							<li class="menu__links-item"><a href="#programmy">Программы</a></li>
 							<li class="menu__links-item"><a href="#kak-pomoch">Как нам помочь</a></li>
 							<li class="menu__links-item"><a href="#volonteram">Волонтерам</a></li>
@@ -60,7 +72,6 @@
 			</div><!-- /top-header -->				
 		</header>
 
-	
 	<!--***** News-section *****-->
 	
 		<div class="news">
@@ -124,7 +135,7 @@
 						<div class="news-item-wrap">
 							<img src="img/news/news2.jpg" alt="Mother with son">
 							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news-descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
+							<div class="news-descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. </div>
 						</div>	
 						<button class="btn-more">Подробнее</button>
 					</div>
@@ -202,10 +213,10 @@
 	</div><!-- /news-file -->
 
 		<script>
-  	ymaps.ready(init);
-  	function init () {
+	  	ymaps.ready(init);
+	  	function init () {
     	myMap = new ymaps.Map("Ymap", {center: [ 53.977689, 27.669243
- ], zoom: 13,  behaviors: ["default"]});
+		 ], zoom: 13,  behaviors: ["default"]});
     					myMap.controls.add("mapTools").add("zoomControl");
 
     	var myPlacemark = new ymaps.Placemark([ 37.543839,55.799608 ], {}, {
@@ -214,10 +225,10 @@
 			iconImageHref: 'img/marker.png',
 			iconImageSize: [60, 85],
 			iconImageOffset: [-30, -35]
-		});
-    	myMap.geoObjects.add(myPlacemark);
-  	}
-</script>	
+			});
+	    	myMap.geoObjects.add(myPlacemark);
+	  	}
+		</script>	
 
 		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<script src="libs/slick/slick.min.js"></script>

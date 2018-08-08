@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="css/fonts.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	</head>
 	<body>
 
@@ -45,7 +44,20 @@
 							<span></span>
 						</a>
 						<ul class="menu menu__links">
-							<li class="menu__links-item"><a href="#home">О нас</a></li>
+							<li class="menu__links-item"><a href="#home">О нас</a>
+								<ul class="submenu">
+						            <li><a href=#>История</a></li>
+						            <li><a href=#>Что такое паллиатив?</a></li>
+						            <li><a href=#>Наша команда</a></li>
+						            <li><a href=#>Наши попечители</a></li>
+						            <li><a href=#>Программы</a></li>
+						            <li><a href=#>Проекты</a></li>
+						            <li><a href=#>Отчеты</a></li>
+						            <li><a href=#>Лесная поляна</a></li>
+						            <li><a href=#>Нам помогают</a></li>
+						            <li><a href=#>Волонтеры</a></li>
+						        </ul>
+							</li>
 							<li class="menu__links-item"><a href="#programmy">Программы</a></li>
 							<li class="menu__links-item"><a href="#kak-pomoch">Как нам помочь</a></li>
 							<li class="menu__links-item"><a href="#volonteram">Волонтерам</a></li>
@@ -209,31 +221,28 @@
 
 				<div class="contacts-map map-wrap" id="map">
 					<div id="Ymap"></div>
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad486c5037332c2cfd4552729e34e90b958fa222b0a6f6f77f1f51ca84046297c&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+					<script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad486c5037332c2cfd4552729e34e90b958fa222b0a6f6f77f1f51ca84046297c&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 
 			</div><!-- /contacts-main -->
 		</div><!-- /contacts -->
 
-		
-
 		<script>
-  	ymaps.ready(init);
-  	function init () {
-    	myMap = new ymaps.Map("Ymap", {center: [ 53.977689, 27.669243
- ], zoom: 13,  behaviors: ["default"]});
+	  	ymaps.ready(init);
+	  	function init () {
+    	myMap = new ymaps.Map("Ymap", {center: [ 37.6,55.789608 ], zoom: 13,  behaviors: ["default"]});
     					myMap.controls.add("mapTools").add("zoomControl");
 
     	var myPlacemark = new ymaps.Placemark([ 37.543839,55.799608 ], {}, {
 			hideIconOnBalloonOpen: false,
 			iconLayout: 'default#image',
-			iconImageHref: 'img/marker.png',
+			iconImageHref: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIq_0qE92ljgPUkCElt7QXxUGdm-w3wxv4H4goIL1qpoxpTe64lQ',
 			iconImageSize: [60, 85],
 			iconImageOffset: [-30, -35]
-		});
-    	myMap.geoObjects.add(myPlacemark);
-  	}
-</script>	
+			});
+	    	myMap.geoObjects.add(myPlacemark);
+  		}
+		</script>	
 
 		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<script src="libs/slick/slick.min.js"></script>

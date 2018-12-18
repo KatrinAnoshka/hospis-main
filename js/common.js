@@ -49,15 +49,22 @@ $(document).ready(function() {
 ]
   });
 
-  // Adaptive menu 
+/*************** Adaptive menu ***************/
 
     (function($){
-      $(function() {
-        $('.menu__icon').on('click', function() {
-          $(this).closest('.logo-bottom').toggleClass('menu_state_open');
-          $(".btn-help").toggleClass('help-open');
+        $(function() {
+            $('.menu__icon').on('click', function() {
+                $(this).closest('.header__bottom').toggleClass('menu_state_open');
+                // $(".button__help").toggleClass('help__open');
+            });
         });
-      });
     })(jQuery);
+
+/************* Drop-down menu *************/
+
+    $('.menu__drop-down').on('click', function() {
+        $('.submenu').toggleClass('submenu--active');
+        $('.menu__drop-down').toggleClass('menu__drop-down--active');
+    });
 
 });

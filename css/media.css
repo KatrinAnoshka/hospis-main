@@ -7,7 +7,7 @@ ethod  ==========*/
 
 /**************Contacts**************/
 
-    .contacts-map {
+    .contacts__map {
         width: 500px;
         padding: 50px 60px 0;
         padding-left: 10px;
@@ -39,14 +39,14 @@ ethod  ==========*/
     .contacts__wrap {
         text-align: center;
     }
-    .contacts-map {
+    .contacts__map {
         padding-left: 0;
         width: 405px;
     }    
     
 /**********Home-page/////Slider-main-section**********/ 
 
-    h1 {
+    .slider__main h3 {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
@@ -92,6 +92,12 @@ ethod  ==========*/
     .scl__icons a {
         padding-right: 0;
     }
+
+/**********Home-page///Slider-section**********/
+
+    .news__wrap {
+        margin-top: 3%;
+    }
    
 }
 
@@ -99,7 +105,7 @@ ethod  ==========*/
 
 /**********Home-page/////Slider-main-section**********/
 
-    .slider-main .slick-slide img {
+    .slider__main .slick-slide img {
         margin: 0 -3%!important;
     }
 
@@ -201,7 +207,7 @@ ethod  ==========*/
 
 /*************Contacts-section*************/ 
 
-    .contacts-map {
+    .contacts__map {
         width: 350px;
     }
 
@@ -233,7 +239,7 @@ ethod  ==========*/
 
 /**********Home-page////Slider-main-section**********/
 
-    .slider-main .slick-dots {
+    .slider__main .slick-dots {
         bottom: 265px;
     }
 
@@ -249,7 +255,7 @@ ethod  ==========*/
 
 /************Contacts-section************/
 
-    .contacts-map {
+    .contacts__map {
         width: 310px;
         height: 310px;
     }
@@ -260,7 +266,7 @@ ethod  ==========*/
     
 /************Contacts-section************/
 
-    .contacts-map {
+    .contacts__map {
         width: 250px;
         height: 250px;
     }

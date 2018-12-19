@@ -20,7 +20,7 @@ html, body {
 .header {
 	padding: 10px 20px;
 }
-header.blue {
+header.header--blue {
 	background-color: #71bdff;
 }
 .header__wrap {
@@ -137,6 +137,13 @@ header.blue {
 	border-top: 0;
 	border-bottom: 8px solid #71bdff;
 }
+.header--blue .menu__drop-down:after {
+	border-top: 8px solid #fff;
+}
+.header--blue .menu__drop-down.menu__drop-down--active:after {
+	border-top: 0;
+	border-bottom: 8px solid #fff;
+}
 .submenu--active {
 	display: block !important;
 }
@@ -144,7 +151,7 @@ ul.submenu {
     display: none;
     z-index: 1000;
     width: 194px;
-    background-color: #71bdff;
+    background-color: #59a9ef;
     padding: 10px;
     position: absolute;
     top: 60px;
@@ -271,12 +278,12 @@ input,
 
 /***************Slider-main-section***************/
 
-.slider-main {
+.slider__main {
 	width: 100%;
 	height: 716px;
 	overflow: hidden;
 }
-.slider-section {
+.slider__section {
 	width: 900px;
     max-width: 100%;
     height: auto;
@@ -291,30 +298,30 @@ input,
 .slick-list {
 	overflow: visible !important;
 }
-.slider-main .slick-dots {
+.slider__main .slick-dots {
 	bottom: 209px;
 }
-.slider-main .slick-dots li button:before {
+.slider__main .slick-dots li button:before {
 	top: 63px !important;
 	color: #71bdff !important;
 	font-size: 15px;
 }
-.slider-main .slick-slider {
+.slider__main .slick-slider {
     margin:0 -69px;
 }
-.slider-main .slick-slide {
+.slider__main .slick-slide {
     text-align:center;
     margin-right: 90px;
     margin-left: 18px;
 }
-h1 {
+.slider__main h3 {
 	position: relative;
     bottom: 537px;
     left: -166px;
     font-size: 3em;
     color: #fa9bbb;
 }
-.slider-section p {
+.slider__section p {
 	position: relative;
     bottom: 537px;
     left: 72px;
@@ -327,13 +334,13 @@ h1 {
 .sponsors .slick-slide img {
 	width: 100px;
 }
-.slider-section .button__more {
+.slider__section .button__more {
 	position: absolute;
 	background-color: #71bdff;
     top: 520px;
     margin-left: 70px;
 }
-.slider-section .button__more:hover {
+.slider__section .button__more:hover {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#a0d0f9), to(#52a1e7));
 	background-image: -webkit-linear-gradient(#a0d0f9, #52a1e7);
 	background-image: -o-linear-gradient(#a0d0f9, #52a1e7);
@@ -358,13 +365,13 @@ h1 {
 	padding-bottom: 30px;
 	margin-bottom: 0;
 }
-.description-wrap p {
+.description__wrap p {
 	padding: 0 20px;
 }
-.description-wrap .button__more {
+.description__wrap .button__more {
 	background-color: #71bdff;
 }
-.description-wrap .button__more:hover {
+.description__wrap .button__more:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#a0d0f9), to(#52a1e7));
     background-image: -webkit-linear-gradient(#a0d0f9, #52a1e7);
     background-image: -o-linear-gradient(#a0d0f9, #52a1e7);
@@ -470,7 +477,7 @@ h1 {
     position: relative;
     top: 23px;
 }
-.news-more {
+.news__more {
 	font-size: 1em;
 	color: #fff;
 	text-align: center;
@@ -478,7 +485,7 @@ h1 {
 	padding-top: 80px;
 	padding-bottom: 52px;
 }
-.news-more:hover {
+.news__more:hover {
 	color: #414141;
 }
 
@@ -500,7 +507,7 @@ h1 {
 	padding-top: 10px;
 	padding-bottom: 30px;
 }
-.sponsors-main {
+.sponsors__wrap {
 	width: 100%;
 }
 .sponsors .slick-dots li button:before {
@@ -595,7 +602,7 @@ h1 {
 .tel:hover, .mail:hover {
 	color: #414141;
 }
-.contacts-map {
+.contacts__map {
 	max-width: 100%;
 }
 #map { 
@@ -619,7 +626,7 @@ h1 {
 	background-image: url(../img/marker.png);
 	z-index: 1000;
 }
-.map-wrap {
+.map__wrap {
     position: relative;
 }
 
@@ -640,7 +647,8 @@ header.header--white {
 .header--white .menu__links-item a:hover {
     color: #71bdff;
 }
-.header--white .submenu--active .submenu__links:hover {
+.header--white .submenu--active .submenu__links:hover,
+.header--blue .submenu--active .submenu__links:hover {
     color: #fff;
     border: none;
 }
@@ -658,9 +666,9 @@ header.header--white {
 .header--white .menu__icon span {
 	background: #71bdff;
 }
-.header--white ul.submenu {
+/*.header--white ul.submenu {
     background-color: #59a9ef;
-}
+}*/
 
 /*************News-section*************/
 

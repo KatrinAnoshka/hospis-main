@@ -19,24 +19,20 @@
 
 	<!--****** Header-section ******-->
 		
-		<header class="blue">
-			<div class="top-header">
-				<div class="logo-wrap">
+		<header class="header header--blue">
+			<div class="header__wrap">
+				<a class="logo__wrap" href="/"> 
 					<img class="logo"  src="img/logo.png" alt="Logo">
-				</div>	
+				</a>
 
-				<div class="logo-descr">	
-
-					<div class="logo-top">	
-						<div class="logo-text">Если ребенка нельзя вылечить, это не значит, что ему нельзя помочь</div>
+				<div class="header__descr">	
+					<div class="header__top">	
+						<div class="header__text">Если ребенка нельзя вылечить, это не значит, что ему нельзя помочь</div>
 						<div class="ru">RU</div>
-						<div class="en">EN</div>
-						<form action="#" method="post" class="search">
-							<input type="search" name="search" placeholder="Поиск" class="input" />
-						</form>		
+						<div class="en">EN</div>							
 					</div>
 					
-					<div class="logo-bottom">
+					<nav class="header__bottom">
 						<a href="#" class="menu__icon">
 							<span></span>
 							<span></span>
@@ -44,131 +40,137 @@
 							<span></span>
 						</a>
 						<ul class="menu menu__links">
-							<li class="menu__links-item"><a href="#home">О нас</a>
+							<li class="menu__links-item menu__drop-down"><a href="#home">О нас</a>
 								<ul class="submenu">
-						            <li><a href=#>История</a></li>
-						            <li><a href=#>Что такое паллиатив?</a></li>
-						            <li><a href=#>Наша команда</a></li>
-						            <li><a href=#>Наши попечители</a></li>
-						            <li><a href=#>Программы</a></li>
-						            <li><a href=#>Проекты</a></li>
-						            <li><a href=#>Отчеты</a></li>
-						            <li><a href=#>Лесная поляна</a></li>
-						            <li><a href=#>Нам помогают</a></li>
-						            <li><a href=#>Волонтеры</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>История</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Что такое паллиатив?</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Наша команда</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Наши попечители</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Программы</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Проекты</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Отчеты</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Лесная поляна</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Нам помогают</a></li>
+						            <li class="submenu__links-item"><a class="submenu__links" href=#>Волонтеры</a></li>
 						        </ul>
 							</li>
 							<li class="menu__links-item"><a href="#programmy">Программы</a></li>
 							<li class="menu__links-item"><a href="#kak-pomoch">Как нам помочь</a></li>
 							<li class="menu__links-item"><a href="#volonteram">Волонтерам</a></li>
 							<li class="menu__links-item"><a href="#contacty">Контакты</a></li>
-							<li class="jf"></li>
 						</ul>
-							<button class="btn-help">Помочь</button>			            
-					</div><!-- /logo-bottom -->	
+									            
+					</nav><!-- /end of Header__bottom -->	
+				
+				</div><!-- /end of Header__descr -->
 
-				</div><!-- /logo-descr -->	
+				<div class="logo__input">
+					<form action="#" method="post" class="search">
+						<input type="search" name="search" placeholder="Поиск" class="search__input" />
+					</form>	
+					<button class="button button__help">Помочь</button>	
+				</div>
 
-			</div><!-- /top-header -->				
+			</div><!-- /end of Header__top -->				
 		</header>
 
 	<!--****** Slider-main-section ******-->
 
-		<div class="slider-main">
-			<div class="slider-section">
+		<div class="slider__main">
+			<div class="slider__section">
 				
 				<div class="slider center">
 					<div>
 						<img src="img/slider/slider.jpg" alt="Girl with teddy">
-						<h1>Пример текста</h1>
+						<h3>Пример текста</h3>
 						<p align="left">Пример текста для описания<br> изображения, события или<br> новости.</p>
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>
 					<div>
 						<img src="img/slider/slider1.jpg" alt="Boy with granny">
-						<h1>Пример текста</h1>
+						<h3>Пример текста</h3>
 						<p align="left">Пример текста для описания<br> изображения, события или<br> новости.</p>
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>
 					<div>
 						<img src="img/slider/slider1.jpg" alt="Boy with granny">
-						<h1>Пример текста</h1>
+						<h3>Пример текста</h3>
 						<p align="left">Пример текста для описания<br> изображения, события или<br> новости.</p>
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>				    
-				</div><!-- /slider -->
+				</div><!-- /end of Slider -->
 
-			</div><!-- /slider-section -->
-		</div><!-- /slider-main -->
+			</div><!-- /end of Slider__section -->
+		</div><!-- /end of Slider__main -->
 
-	<!--**** Description-section ****-->
+	<!--***************** Description-section *****************-->
 
-	<div class="description">
-		<h2>Белорусский детский хоспис</h2>
+		<section class="description">
+			<h2>Белорусский детский хоспис</h2>
 
-		<div class="description-wrap">
-			<p>ОБО «Белорусский детский хоспис»: негосударственная и некоммерческая структура, которая оказывает медицинскую, психологическую, социальную и духовную помощь семьям, воспитывающим детей с ограничивающими срок жизни и угрожающими жизни заболеваниями. Мы первая общественная организация, которая работает с Министерством здравоохранения на условиях частно-государственного партнерства. Сейчас в хосписе «Лесная поляна» совместно работает ГУ «Республиканский клинический центр паллиативной медицинской помощи детям» и ОБО «Белорусский детский хоспис». Республиканский клинический центр оказывает паллиативную медицинскую помощь.</p>
-			<button class="btn-more">Узнать больше</button>
-		</div>
-	</div>
+			<div class="description__wrap">
+				<p>ОБО «Белорусский детский хоспис»: негосударственная и некоммерческая структура, которая оказывает медицинскую, психологическую, социальную и духовную помощь семьям, воспитывающим детей с ограничивающими срок жизни и угрожающими жизни заболеваниями. Мы первая общественная организация, которая работает с Министерством здравоохранения на условиях частно-государственного партнерства. Сейчас в хосписе «Лесная поляна» совместно работает ГУ «Республиканский клинический центр паллиативной медицинской помощи детям» и ОБО «Белорусский детский хоспис». Республиканский клинический центр оказывает паллиативную медицинскую помощь.</p>
+				<button class="button button__more">Узнать больше</button>
+			</div>
+		</section>
 
-	<!--***** News-section *****-->
+	<!--************** News-section **************-->
 
-		<div class="news">
-			<h2>Наши новости</h2>
+		<section class="news">
+			<h2 class="news__title">Наши новости</h2>
 			
 			<img class="line" src="img/line.png" alt="line">
 
-			<div class="news-main">
+			<div class="news__container">
 
-				<div class="news-wrap">
+				<div class="news__wrap">
 					<h3>14 МАЯ 2018</h3>
-					<div class="news-item">
-						<div class="news-item-wrap">						
+					<div class="news__item">
+						<div class="news__item-wrap">						
 							<img src="img/news/news1.jpg" alt="Colored hands">							
 							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news-descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
+							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
 						</div>	
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>
 				</div>
 
-				<div class="news-wrap child--2">
+				<div class="news__wrap">
 					<h3>05 ИЮНЯ 2018</h3>
-					<div class="news-item">
-						<div class="news-item-wrap">
+					<div class="news__item">
+						<div class="news__item-wrap">
 							<img src="img/news/news2.jpg" alt="Mother with son">
 							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news-descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
+							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
 						</div>	
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>
 				</div>
 
-				<div class="news-wrap child--1">
+				<div class="news__wrap">
 					<h3>23 ИЮНЯ 2018</h3>
-					<div class="news-item">
-						<div class="news-item-wrap">
+					<div class="news__item">
+						<div class="news__item-wrap">
 							<img src="img/news/news3.jpg" alt="Wolf">
 							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news-descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
+							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
 						</div>	
-						<button class="btn-more">Подробнее</button>
+						<button class="button button__more">Подробнее</button>
 					</div>
 				</div>
 
-			</div><!-- /news-main -->
+			</div><!-- /end of News__container -->
 
-			<div class="news-more">показать еще новости</div>
+			<div class="news__more">показать еще новости</div>
 
-		</div><!-- /news -->
+		</section><!-- /end of News -->
  
 	<!--********* Sponsors-section *********-->
 
-		<div class="sponsors">
+		<section class="sponsors">
 			<h2>Лента спонсоров</h2>
 			
-			<div class="sponsors-main">
+			<div class="sponsors__wrap">
 				<div class="slider multiple-items">
 					<div><img src="img/sponsors/sponsors1.png" alt="Аналитика технологий и бизнеса"></div>
 					<div><img src="img/sponsors/sponsors2.png" alt="Белорусская железная дорога"></div>
@@ -183,20 +185,20 @@
 					<div><img src="img/sponsors/sponsors5.png" alt="МТС"></div>
 					<div><img src="img/sponsors/sponsors6.png" alt="Vizor"></div>
 				</div>
-			</div><!-- /sponsors-main -->
+			</div><!-- /end of Sponsors__wrap -->
 
-		</div><!-- /sponsors -->
+		</section><!-- /end of Sponsors -->
 
 
 	<!--******* Contacts-section *******-->
 
-		<div class="contacts">
-			<div class="contacts-main">
+		<section class="contacts">
+			<div class="contacts__container">
 				
-				<div class="contacts-descr">
+				<div class="contacts__wrap">
 					<div class="contacts-1">
 						<h2>Контакты</h2>
-						<div class="scl-icons">
+						<div class="scl__icons">
 							<a href="#"><img src="img/scls/vk.png" alt="VK"></a>
 							<a href="#"><img src="img/scls/fb.png" alt="Facebook"></a>
 							<a href="#"><img src="img/scls/im.png" alt="Instagram"></a>
@@ -217,15 +219,15 @@
 						<p>Мобильный <a class="tel" href="tel:+375297777602">+375 29 777 76 02</a></p>
 						<p>Координатор автоволонтеров <a class="tel" href="tel:+375256027873">+37525 602 78 73</a></p>
 					</div>	
-				</div><!-- /contacts-descr -->
+				</div><!-- /end of Contacts__wrap -->
 
-				<div class="contacts-map map-wrap" id="map">
+				<div class="contacts__map map__wrap" id="map">
 					<div id="Ymap"></div>
 					<script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad486c5037332c2cfd4552729e34e90b958fa222b0a6f6f77f1f51ca84046297c&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 
-			</div><!-- /contacts-main -->
-		</div><!-- /contacts -->
+			</div><!-- /end of Contacts__container -->
+		</section><!-- /end of Contacts -->
 
 		<script>
 	  	ymaps.ready(init);

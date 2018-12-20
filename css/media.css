@@ -61,7 +61,8 @@ ethod  ==========*/
 
 /***************Our__news-page////Contact-section***************/
 
-    .our__news .contacts__wrap h2 {
+    .our__news .contacts__wrap h2,
+    .palliativ .contacts__wrap h2 {
         text-align: center;
     }
     
@@ -111,7 +112,8 @@ ethod  ==========*/
 
 /************Our__news-page////Contacts************/
 
-    .our__news .contacts__wrap {
+    .our__news .contacts__wrap,
+    .palliativ .contacts__wrap {
         -moz-flex-direction: column;
         -o-flex-direction: column;
                 flex-direction: column;
@@ -159,8 +161,41 @@ ethod  ==========*/
     }
     .news__wrap {
         width: 43%;
-    }   
+    }  
 
+/***************Palliativ-page/////Colored__title***************/
+
+    .palliativ .colored__title .line {
+        position: relative;
+        top: 56px;
+    }
+    .colored__title .white__title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+/*****Comments*****/
+
+    .comments__wrap {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .comments__textarea {
+        margin-right: 0;
+    }
+    .share__wrap, .comments__subtitle {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -185,7 +220,14 @@ ethod  ==========*/
     .news__wrap {
         width: 70%;
     }
-    
+
+/***************Palliativ-page/////Colored__title***************/
+
+    .colored__title .white__title {
+        padding-top: 26px;
+    }
+
+
 }   
 
 /* Extra Small Devices, Phones */

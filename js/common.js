@@ -66,7 +66,13 @@ $(document).ready(function() {
 ]
   });
 
+/************* Review-page *************/
 
+   
 
+    $('.review__button').on('click', function() {
+        $(this).closest('.review__item').toggleClass('open');
+    });
 
+  
 });

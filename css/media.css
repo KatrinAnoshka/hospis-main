@@ -61,10 +61,8 @@ ethod  ==========*/
 
 /***************Our__news-page////Contact-section***************/
 
-    .our__news .contacts__wrap h2,
-    .palliativ .contacts__wrap h2,
-    .library .contacts__wrap h2,
-    .review .contacts__wrap h2 {
+    .contacts--blue .contacts__wrap h2,
+    .contacts--white .contacts__wrap h2 {
         text-align: center;
     }
     
@@ -114,10 +112,8 @@ ethod  ==========*/
 
 /************Our__news-page////Contacts************/
 
-    .our__news .contacts__wrap,
-    .palliativ .contacts__wrap,
-    .library .contacts__wrap,
-    .review .contacts__wrap {
+    .contacts--blue .contacts__wrap,
+    .contacts--white .contacts__wrap {
         -moz-flex-direction: column;
         -o-flex-direction: column;
                 flex-direction: column;
@@ -194,14 +190,14 @@ ethod  ==========*/
 
 /***************Palliativ-page/////Colored__title***************/
 
-    .palliativ .colored__title .line {
+   /* .palliativ .colored__title .line {
         position: relative;
         top: 56px;
     }
     .colored__title .white__title {
         padding-left: 10px;
         padding-right: 10px;
-    }
+    }*/
 
 /*****Comments*****/
 
@@ -224,6 +220,16 @@ ethod  ==========*/
     }
     .share__wrap, 
     .comments__subtitle {
+        text-align: center;
+    }
+
+    /**************Team-page////////**************/
+
+    .team-page .team__item {
+        float: none;
+        margin: 0 auto 30px;
+    }
+    .team-page__subtitle {
         text-align: center;
     }
 }
@@ -253,9 +259,12 @@ ethod  ==========*/
 
 /***************Palliativ-page/////Colored__title***************/
 
-    .colored__title .white__title {
+    /*.colored__title .white__title {
         padding-top: 26px;
-    }
+    }*/
+    /*.team-page .colored__title .white__title {
+        padding-top: 70px;
+    }*/
 
 /***************Library-page/////***************/
 
@@ -359,6 +368,24 @@ ethod  ==========*/
     .contacts__map {
         width: 250px;
         height: 250px;
+    }
+
+/************Palliativ-page//////************/
+
+    .comments__label {
+            width: 243px;
+    }
+
+/**********Team-page/////**********/
+
+    .team__wrap {
+        padding: 22px 10px;
+    }
+
+/**********Team-page/////**********/
+
+    .team-page__wrap {
+        padding: 0 10px;
     }
     
 }

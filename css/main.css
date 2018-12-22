@@ -687,7 +687,8 @@ header.header--white {
 
 /*************News-section*************/
 
-.our__news .news__wrap {
+.our__news .news__wrap,
+.projects .news__wrap {
 	padding-bottom: 70px;
 }
 .section__bg {
@@ -1206,7 +1207,7 @@ header.header--white {
     text-decoration: none;
 }
 .team__cell:hover  {
-	box-shadow: 11.314px 11.314px 55.86px 1.14px rgba(113, 189, 255, 0.64);
+	box-shadow: 0.314px 4.314px 46.86px 0.14px rgba(113, 189, 255, 0.64);
 }
 .team__name {
   	color: rgb(84, 158, 222);
@@ -1232,4 +1233,64 @@ header.header--white {
 	float: left;
 	margin-right: 60px;
 	margin-bottom: 30px;
+}
+
+/************Projects-page/////////////////************/
+
+.projects .news__item {
+	position: relative;
+}
+.ribbon,
+.ribbon__triangle-l,
+.ribbon__triangle-r {
+	display: none;
+}
+.ribbon {
+    position: absolute;
+    left: 155px;
+    top: 35px;
+   	border-bottom: 40px solid #fa9bbb;
+    border-left: 33px solid transparent;
+    border-right: 44px solid transparent;
+    height: 0;
+    width: 125px;
+    transform: rotate(49deg);
+    z-index: 100;
+    /*transition: 1s;*/
+}
+ 
+.ribbon h2 {
+    font-size: 18px;
+    color: #fff;
+    padding-top: 6px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+    margin: 0;
+}
+ 
+.ribbon__triangle-l {   
+    position: absolute;
+    left: 175px;
+    top: -8px;
+    z-index: 100;
+    width: 0;
+	height: 0;
+	border-bottom: 8px solid #c66d90; 
+	border-right: 8px solid transparent;	
+}
+ 
+.ribbon__triangle-r {
+    position: absolute;
+    left: 300px;
+    top: 135px;
+    z-index: 100;
+    width: 0;
+    height: 0;
+    border-bottom: 9px solid #c66d90;
+    border-right: 7px solid transparent;
+}
+.projects .news__item:hover .rectangle,
+.projects .news__item:hover .triangle-l,
+.projects .news__item:hover .triangle-r {
+	display: block;
 }

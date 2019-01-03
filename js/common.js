@@ -10,7 +10,7 @@ $(document).ready(function() {
         });
     })(jQuery);
 
-/************* Drop-down menu *************/
+    ///// Drop-down menu 
 
     $('.menu__drop-down').on('click', function() {
         $('.submenu').toggleClass('submenu--active');
@@ -66,13 +66,16 @@ $(document).ready(function() {
 ]
   });
 
-/************* Review-page *************/
-
-   
+/************* Review-page///Drop-down *************/
 
     $('.review__button').on('click', function() {
         $(this).closest('.review__item').toggleClass('open');
     });
 
-  
+/*************** Donation-page///Drop-down ***************/
+
+    $('.payment-main').on('click', function() {
+        $('.payment-hidden').toggleClass('payment-display');
+    });
+          
 });

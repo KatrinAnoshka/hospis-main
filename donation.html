@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">  
-		<title>Наши новости</title>
+		<title>Сделать пожертвование</title>
 
 		<meta name="description" content="Новости белорусского детского ХОСПИСА" />
 		<meta name="keywords" content="Белорусский детский ХОСПИС" />
@@ -17,7 +17,7 @@
 	</head>
 	<body>
 	
-	<div class="our__news">	
+	<div class="donation">	
 
 	<!--***************** Header-section *****************-->	
 
@@ -70,116 +70,92 @@
 					<form action="#" method="post" class="search">
 						<input type="search" name="search" placeholder="Поиск" class="search__input" />
 					</form>	
-					<a href="help.html" class="button button__help">Помочь</a>
+					<a href="help.html" class="button button__help">Помочь</a>	
 				</div>
+
 			</div><!-- /end of Header__wrap -->				
 		</header>
 
-	<!--*************** News-section ***************-->
+	<!--*************** Donation-section ***************-->
 	
-		<section class="news section__bg">
-			<h2 class="white__title">Наши новости</h2>
+		<section class="donation section__bg">
+
+			<h2 class="white__title">Сделать пожертвование</h2>
 			
 			<img class="line" src="img/line.png" alt="line">
 
-			<div class="news__container">
+			<div class="donation__container">
+
+				<h3 class="summ__title">Выберите сумму в белорусских рублях</h3>
+
+				<div class="summ">
+					<div class="summ__item">10 руб.</div>
+					<div class="summ__item">20 руб.</div>
+					<div class="summ__item">30 руб.</div>
+					<div class="summ__item">40 руб.</div>
+					<div class="summ__item">50 руб.</div>
+					<div class="summ__item">Другая сумма</div>
+				</div>
 				
-				<div class="news__wrap">
-					<h3>14 МАЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">						
-							<img src="img/news/news1.jpg" alt="Colored hands">							
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
+				<div class="monthly">
+					<h3 class="monthly__title">Хочу жертвовать ежемесячно</h3>
+					<label class="donation__checkbox">
+						<input class="input__checkbox" type="checkbox" name="checkbox">
+						<span></span>
+					</label>
+				</div>
+				
+				<div class="payment payment-main">
+					<p class="payment__title">С помощью WebPay</p>
+					<img src="img/webpay.jpg" alt="webpay" class="payment__webpay">
 				</div>
 
-				<div class="news__wrap">
-					<h3>05 ИЮНЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">
-							<img src="img/news/news2.jpg" alt="Mother with son">
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
+				<!-- Hidden-payment -->
+				<div class="payment payment-hidden">
+					<p class="payment__title">С помощью USSD-запроса или SMS (MTC)</p>
+				</div>
+				<div class="payment payment-hidden">
+					<p class="payment__text">Абоненты МТС  могут отправить СМС на номер 2121 с любым текстом.</p>
+					<p class="payment__text">С Вашего баланса будет списано 2 рубля в пользу Белорусского детского хосписа.</p>
+					<p class="payment__text">Абоненты МТС  могут отправить USSD-ЗАПРОС. <br>Наберите: *222*1# (вызов) <br>С вашего номера будет списано пожертвование в 2 рубля в пользу Белорусского детского хосписа.</p>
+				</div>
+				<div class="payment payment-hidden">
+					<p class="payment__title">С помощью SMS-собщения (МТС, life)</p>
+				</div>
+				<div class="payment payment-hidden">
+					<p class="payment__title">Звонок со стационарного телефона</p>
+				</div>
+				<div class="payment payment-hidden">
+					<p class="payment__title">Система «Расчет» (ЕРИП)</p>
+				</div>
+				<div class="payment payment-hidden">
+					<p class="payment__title">В отделении любого банка Республики Беларусь</p>
+				</div>
+				<!-- //////Hidden-payment -->
+
+				<div class="input__wrap">
+					<input type="email" name="email" class="input__email" value="" placeholder="Ваш email" >
 				</div>
 
-				<div class="news__wrap">
-					<h3>23 ИЮНЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">
-							<img src="img/news/news3.jpg" alt="Wolf">
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
-				</div>
+				<div class="approve">
+					<p class="approve__title">Совершая пожертвование в пользу «Белоруского Детского Хосписа», Вы подтверждаете свое согласие с <a class="approve__link" href="#">условиями Договора</a>.</p>
+					<label class="donation__checkbox">
+						<input class="input__checkbox" type="checkbox" name="checkbox">
+						<span></span>
+					</label>
+				</div>	
 
-				<div class="news__wrap">
-					<h3>14 МАЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">						
-							<img src="img/news/news1.jpg" alt="Colored hands">							
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
-				</div>
+				<a href="#" class="button button__next">Продолжить</a>	
 
-				<div class="news__wrap">
-					<h3>05 ИЮНЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">
-							<img src="img/news/news2.jpg" alt="Mother with son">
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи. </div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
-				</div>
+				<p class="donation__text">Для юридических лиц необходимо заключение договора о предоставлении безвозмездной (спонсорской) помощи между ОБО «Белорусский детский хоспис» и вашей организацией. Подробнее <a href="#" class="donation__text-link">здесь</a>.</p>
 
-				<div class="news__wrap">
-					<h3>23 ИЮНЯ 2018</h3>
-					<div class="news__item">
-						<div class="news__item-wrap">
-							<img src="img/news/news3.jpg" alt="Wolf">
-							<h4>Акция &#171;365 дней добра&#187;</h4>
-							<div class="news__descr">Вся работа детского хосписа направлена на улучшение качества жизни тяжелобольного ребенка и членов его семьи.</div>
-						</div>	
-						<a href="#" class="button button__more">Подробнее</a>
-					</div>
-				</div>
-
-			</div><!-- /end of News__container -->
-
-			<!--Block Pagination-->
-	     	<div class="pagination">
-	            <ul>
-	                 <li><a href="#" class="prev">&#9668;</a></li>
-	                 <li class="active"><a href="#">1</a></li>
-	                 <li><a href="#">2</a></li>
-	                 <li><a href="#">3</a></li>
-	                 <li><a href="#">4</a></li>
-	                 <li><a href="#">5</a></li>
-	                 <li><a href="#">6</a></li>
-	                 <li><a href="#">...</a></li>
-	                 <li><a href="#">18</a></li>
-	                 <li><a href="#" class="next">&#9658;</a></li>
-	            </ul>
-	      	</div>
-			<!--//////Block Pagination-->
-			
+			</div><!-- /end of Donation__container -->
+		
 			<img class="line-1" src="img/line.png" alt="line">
 
-		</section><!-- /end of News -->
+		</section><!-- /end of Donation -->
 
-	<!--***************** Contacts-section *****************-->
+	<!--******************* Contacts-section *******************-->
 
 		<section id="contacts" class="contacts contacts--white">
 			<div class="contacts__container">

@@ -1,11 +1,10 @@
-/*==========  Desktop First M
-ethod  ==========*/
+/*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1600px) {
 
-/**************Contacts**************/
+/************** Contacts-section **************/
 
     .contacts__map {
         width: 500px;
@@ -14,7 +13,7 @@ ethod  ==========*/
         overflow: hidden;
     }
     
-/****** Home-page/////Sponsors-section ******/
+/************ Home-page/////Sponsors-section ************/
 
     .sponsors .slick-next, .sponsors .slick-prev {
         display: none !important;
@@ -24,16 +23,21 @@ ethod  ==========*/
 
 @media only screen and (max-width: 1200px) {
     
-/****************Header-section****************/
+/**************** Header-section ****************/
 
     .menu {
         padding-right: 22px;
     }
 
-/***********Contacts-section***********/
+/************** Contacts-section **************/
 
     .contacts__container {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
         flex-direction: column;
+        -ms-align-items: center;
         align-items: center;
     }   
     .contacts__wrap {
@@ -44,7 +48,7 @@ ethod  ==========*/
         width: 405px;
     }    
     
-/**********Home-page/////Slider-main-section**********/ 
+/************** Home-page/////Slider-main-section **************/ 
 
     .slider__main h3 {
         left: 50%;
@@ -53,13 +57,13 @@ ethod  ==========*/
         margin-left: 35px;
     }
     
-/**************Home-page/////Sponsors**************/
+/************** Home-page/////Sponsors-section **************/
 
     .sponsors {
         width: auto; 
     }
 
-/***************Our__news-page////Contact-section***************/
+/*************** Our__news-page////Contact-section ***************/
 
     .contacts--blue .contacts__wrap h2,
     .contacts--white .contacts__wrap h2 {
@@ -72,7 +76,7 @@ ethod  ==========*/
 
 @media only screen and (max-width: 992px) {
     
-/************Header-section************/
+/****************** Header-section ******************/
     
     .menu__icon {
         display: block;
@@ -85,7 +89,7 @@ ethod  ==========*/
         padding-top: 0;
     }
 
-/***********Contacts-section***********/
+/***************** Contacts-section *****************/
     
     .contacts__container {
         padding-top: 40px;
@@ -94,7 +98,7 @@ ethod  ==========*/
         padding-right: 0;
     }
 
-/**********Home-page///Slider-section**********/
+/********** Home-page///Slider-main-section **********/
 
     .news__wrap {
         margin-top: 3%;
@@ -104,34 +108,31 @@ ethod  ==========*/
 
 @media only screen and (max-width: 880px) {
 
-/**********Home-page/////Slider-main-section**********/
+/********** Home-page/////Slider-main-section **********/
 
     .slider__main .slick-slide img {
-        margin: 0 -3%!important;
+        margin: 0 -3% !important;
     }
 
-/************Our__news-page////Contacts************/
+/***************** Contacts *****************/
 
     .contacts--blue .contacts__wrap,
     .contacts--white .contacts__wrap {
         -moz-flex-direction: column;
         -o-flex-direction: column;
-                flex-direction: column;
+            flex-direction: column;
         -ms-align-items: center;
-                align-items: center;
+            align-items: center;
     } 
 
-/************Review-page************/
+/***************** Review-page *****************/
 
     .review__form-wrap {
-        display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
         display: flex;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
-        -ms-flex-direction: column;
         -o-flex-direction: column;
         flex-direction: column;
         -ms-align-items: center;
@@ -139,8 +140,13 @@ ethod  ==========*/
     }   
     .review__form-textarea {
         margin-right: 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
-    align-items: center;
+        -ms-align-items: center;
+        align-items: center;
     }
     .review__form-subtitle {
         text-align: center;
@@ -151,7 +157,7 @@ ethod  ==========*/
 
 @media only screen and (max-width: 768px) {
 
-/**************Header-section**************/
+/************** Header-section **************/
 
     .header__text {
         margin-bottom: 26px;
@@ -167,7 +173,6 @@ ethod  ==========*/
     }
     .search {
         padding-top: 0;
-        padding-top: 0;
         padding-left: 0;
         margin: 0 auto;
     }   
@@ -175,7 +180,7 @@ ethod  ==========*/
         bottom: 0;
     } 
 
-/**************News-section**************/
+/************** Home-page////News-section **************/
 
     .news__container {
         padding-top: 20px;
@@ -188,28 +193,14 @@ ethod  ==========*/
         width: 43%;
     }  
 
-/***************Palliativ-page/////Colored__title***************/
-
-   /* .palliativ .colored__title .line {
-        position: relative;
-        top: 56px;
-    }
-    .colored__title .white__title {
-        padding-left: 10px;
-        padding-right: 10px;
-    }*/
-
-/*****Comments*****/
+/*************** Palliativ-page/////Comments ***************/
 
     .comments__wrap {
-        display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
         display: flex;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
-        -ms-flex-direction: column;
         -o-flex-direction: column;
         flex-direction: column;
         -ms-align-items: center;
@@ -223,7 +214,7 @@ ethod  ==========*/
         text-align: center;
     }
 
-    /**************Team-page////////**************/
+    /************** Team-page//////// **************/
 
     .team-page .team__item {
         float: none;
@@ -233,16 +224,26 @@ ethod  ==========*/
         text-align: center;
     }
 
-    /******Projects-page///////******/
+    /************* Projects-page/////// *************/
 
     .projects .news__item-wrap h4 {
         font-size: 0.8em;
+    }
+
+    /************** Donation-page/////// **************/
+
+    .donation .white__title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .payment__webpay {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 550px) {
 
-/**************Header-section**************/
+/************** Header-section **************/
 
     .logo {
         width: 100px;
@@ -257,33 +258,38 @@ ethod  ==========*/
         top: 132px;
     }
 
-/***************News-section***************/
+/*************** News-section ***************/
     
     .news__wrap {
         width: 70%;
     }
 
-/***************Palliativ-page/////Colored__title***************/
-
-    /*.colored__title .white__title {
-        padding-top: 26px;
-    }*/
-    /*.team-page .colored__title .white__title {
-        padding-top: 70px;
-    }*/
-
-/***************Library-page/////***************/
+/*************** Library-page///// ***************/
 
     .library .news__wrap {
         margin: 0 3% 14%;
     }
 
-/***************Review-page/////***************/
+/*************** Review-page///// ***************/
 
     .review__form-area {
         width: 95%;
-    max-width: 100%;
-    margin: 0 auto;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+/************ Donation-page//////// ************/
+
+    .donation .white__title  {
+        font-size: 2.4em;
+    }
+    .summ__title,
+    .monthly__title  {
+        font-size: 1.5em;
+    }
+    .approve__title {
+        width: 100%;
+        padding-right: 10px;
     }
 }   
 
@@ -291,7 +297,7 @@ ethod  ==========*/
 
 @media only screen and (max-width: 500px) {
     
-/****************Header-section****************/
+/**************** Header-section ****************/
 
     .logo__wrap {
         padding-top: 9px;
@@ -304,26 +310,25 @@ ethod  ==========*/
         top: 112px;
     }
 
-/*************Contacts-section*************/ 
+/************* Contacts-section *************/ 
 
     .contacts__map {
         width: 350px;
     }
 
-/***************Home-page/////Sponsors-section***************/
+/*************** Home-page/////Sponsors-section ***************/
 
     .sponsors {
         padding: 0 20px;
     }
 
-   
-/*************Our__news-page////Pagination*************/
+/************* Our__news-page////Pagination *************/
 
     .pagination {
         padding-bottom: 53px;
     }
 
-/*************Review-page*************/
+/************* Review-page/////// *************/
 
     .review__button {
         left: 10%;
@@ -333,7 +338,7 @@ ethod  ==========*/
 
 @media only screen and (max-width: 476px) {
 
-/************Home-page////Sponsors-section************/
+/************ Home-page////Sponsors-section ************/
 
     .sponsors {
         height: 480px;
@@ -342,7 +347,7 @@ ethod  ==========*/
 
 @media only screen and (max-width: 450px) {
 
-/**********Home-page////Slider-main-section**********/
+/********** Home-page////Slider-main-section **********/
 
     .slider__main .slick-dots {
         bottom: 265px;
@@ -352,13 +357,13 @@ ethod  ==========*/
 
 @media only screen and (max-width: 430px) {
     
-/*************News-section*************/
+/************* News-section *************/
 
     .news__wrap {
         width: 80%;
     }
 
-/************Contacts-section************/
+/************ Contacts-section ************/
 
     .contacts__map {
         width: 310px;
@@ -369,26 +374,24 @@ ethod  ==========*/
 
 @media only screen and (max-width: 400px) {
     
-/************Contacts-section************/
+/************ Contacts-section ************/
 
     .contacts__map {
         width: 250px;
         height: 250px;
     }
 
-/************Palliativ-page//////************/
+/************ Palliativ-page////// ************/
 
     .comments__label {
             width: 243px;
     }
 
-/**********Team-page/////**********/
+/********** Team-page///// **********/
 
     .team__wrap {
         padding: 22px 10px;
     }
-
-/**********Team-page/////**********/
 
     .team-page__wrap {
         padding: 0 10px;
@@ -399,7 +402,7 @@ ethod  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 350px) {
 
-/*************Header-section*************/
+/************* Header-section *************/
 
     .menu__icon {
         margin-right: 0;

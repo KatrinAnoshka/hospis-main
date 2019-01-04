@@ -193,7 +193,7 @@
         padding-left: 15px;
     }
     .news__wrap {
-        width: 43%;
+        width: 300px;
     }  
 
 /*************** Palliativ-page/////Comments ***************/
@@ -232,6 +232,11 @@
     .projects .news__item-wrap h4 {
         font-size: 0.8em;
     }
+    .ribbon,
+    .ribbon__triangle-l,
+    .ribbon__triangle-r {
+        opacity: 1;
+    }
 
     /************** Donation-page/////// **************/
 
@@ -263,9 +268,9 @@
 
 /*************** News-section ***************/
     
-    .news__wrap {
-        width: 70%;
-    }
+    /*.news__wrap {
+        width: 300px;
+    }*/
 
 /*************** Library-page///// ***************/
 
@@ -361,6 +366,9 @@
     .slider__main .slick-dots {
         bottom: 265px;
     }
+    .slider__main {
+        height: 725px;
+    }
 
 }
 
@@ -368,9 +376,9 @@
     
 /************* News-section *************/
 
-    .news__wrap {
-        width: 80%;
-    }
+   /* .news__wrap {
+        width: 300px;
+    }*/
 
 /************ Contacts-section ************/
 

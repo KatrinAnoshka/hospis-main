@@ -232,7 +232,7 @@
 
     /************** Donation-page/////// **************/
 
-    .donation .white__title {
+    .white__title {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -290,6 +290,12 @@
     .approve__title {
         width: 100%;
         padding-right: 10px;
+    }
+
+    /************ Palliativ-page//////// ************/
+
+    .palliativ .white__title  {
+        margin-top: -30px;
     }
 }   
 

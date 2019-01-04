@@ -1157,6 +1157,7 @@ header.header--white {
 }
 .team__wrap {
 	height: auto;
+	display: -ms-grid;
     display: grid;
     padding: 22px 20px;
     grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
@@ -1376,6 +1377,7 @@ header.header--white {
 }
 .summ {
 	height: auto;
+	display: -ms-grid;
     display: grid;
     padding: 22px 20px;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));

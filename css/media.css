@@ -88,6 +88,9 @@
         padding-bottom: 5px;
         padding-top: 0;
     }
+    .header__bottom.menu_state_open .menu__links {
+        width: -webkit-fill-available;
+    }
 
 /***************** Contacts-section *****************/
     
@@ -402,7 +405,11 @@
     .team-page__wrap {
         padding: 0 10px;
     }
-    
+/************ Team-page//////// ************/
+
+    .team-page .white__title  {
+        margin-top: -30px;
+    }    
 }
 
 /* Custom, iPhone Retina */

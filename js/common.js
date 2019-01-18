@@ -1,14 +1,11 @@
 $(document).ready(function() {
 
 /*************** Adaptive menu ***************/
-
-    (function($){
-        $(function() {
-            $('.menu__icon').on('click', function() {
-                $(this).closest('.header__bottom').toggleClass('menu_state_open');
-            });
-        });
-    })(jQuery);
+    
+    $('.menu__icon').on('click', function() {
+        $(this).closest('.header__bottom').toggleClass('menu_state_open');
+    });
+     
 
     ///// Drop-down menu 
 
@@ -16,7 +13,23 @@ $(document).ready(function() {
         $('.submenu').toggleClass('submenu--active');
         $('.menu__drop-down').toggleClass('menu__drop-down--active');
     });
-    
+
+/************* Fixed menu *************/
+
+    if ($(window).width() > 992)   {
+        $(window).scroll(function () {
+            var scrolled = $(window).scrollTop();
+            if (scrolled >= 1) {
+                $('header').addClass('header__fixed');                      
+            }
+            else {
+                if (scrolled < 180) {
+                    $('header').removeClass('header__fixed');                                   
+                }
+            }
+        });
+    }
+
 /************* Home-page/////Slider-main-section *************/
 
     $('.center').slick({
